@@ -45,15 +45,14 @@ button {
     color: white;
     margin: 8px 8px 0px 16px;
     align-items: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .stats__desc {
     font-size: 12px;
     opacity: 0.6;
+    font-weight: 300;
 }
-
-.base__stats:first-child {}
 
 .base__btn {
     align-self: center;
@@ -71,7 +70,7 @@ button {
 }
 
 .base__btn--confirm {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
     text-align: center;
     font-size: 13px;
     margin-left: 8px;
@@ -105,4 +104,69 @@ button {
 
 .desc__links {
     color: #5458F7;
+}
+
+.desc__text {
+    line-height: 7px;
+}
+
+
+/* main FOLLOWERS */
+.main__followers {
+    margin-top: 10px;
+    width: 320px;
+    background-color: #191A1D;
+    padding: 16px;
+    border-radius: 20px;
+    color: white;
+}
+
+.followers__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.followers__heading {
+    font-weight: 200;
+    margin: 0;
+}
+
+.followers__icon {
+    color: white;
+    float: right;
+}
+
+/* followers GRID */
+.followers__grid {
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.grid__cell{
+    background:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 12px;
+    height: 160px;
+    padding: 20px 0px;
+}
+.cell--item{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.cell__name{
+    margin: 6px 0px 12px 0px;
+}
+.cell__btn{
+    color: white;
+    background-color: #5458F7;
+    padding: 3px 18px;
+    border-radius: 48px;
+}
+.followed{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    padding: 3px 18px;
+    color: white;
+    border-radius: 48px;
 }
