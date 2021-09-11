@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: NetflixSans;
+    src: url(../fonts/NetflixSans/NetflixSansRegular.ttf);
+}
+
+body {
+    margin: 20px 28px;
+    font-family: Netflix, sans-serif;
+}
+
+button {
+    border: none;
+}
+
+/* main PROFILE */
+.main__profile {
+    width: 320px;
+    padding: 16px;
+    background-color: #191A1D;
+    border-radius: 20px;
+}
+
+/* PROFILE BASE */
+.profile__base {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.base__avatar {
+    grid-row-start: span 2;
+}
+
+.base__stats {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 8px 8px 0px 16px;
+    align-items: center;
+    font-weight: 400;
+}
+
+.stats__desc {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.base__stats:first-child {}
+
+.base__btn {
+    align-self: center;
+    color: white;
+    border-radius: 40px;
+}
+
+.base__btn--message {
+    grid-column-start: span 2;
+    font-size: 14px;
+    background-color: #5458F7;
+    text-align: center;
+    padding: 3px 0px 4px;
+    margin-left: 16px;
+}
+
+.base__btn--confirm {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    text-align: center;
+    font-size: 13px;
+    margin-left: 8px;
+    padding: 4px 0px 5px;
+}
+
+/* PROFILE NICKNAME */
+.profile__nickname {
+    color: white;
+}
+
+.nickname__name {
+    font-size: 20px;
+    margin: 16px 0px 0px;
+    font-weight: 600;
+}
+
+.nickname__hobbie {
+    opacity: 0.6;
+    font-size: 14px;
+    margin: 8px 0px 0px;
+}
+
+/* PROFILE DESCRIPTION */
+.profile__desc {
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 4px 0px 4px;
+}
+
+.desc__links {
+    color: #5458F7;
+}
