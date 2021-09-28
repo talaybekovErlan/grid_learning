@@ -13,7 +13,7 @@
 
 <body>
     <main class="main">
-        <section class="main__profile">
+        <section class="main__profile container">
             <div class="profile__base">
                 <img src="../images/profile.svg" class="base__avatar">
                 <a href="#" class="base__stats">
@@ -43,7 +43,7 @@
         </section>
 
 
-        <section class="main__followers">
+        <section class="main__followers container">
             <div class="followers__head">
                 <h4 class="followers__heading">Mutual Followers</h4>
                 <a href="#" class="followers__icon"><i class="fas fa-times"></i></a>
@@ -67,12 +67,27 @@
                 <div class="grid__cell">
                     <img src="../images/Abigail.svg" class="cell__img cell--item">
                     <p class="cell__name cell--item">Abigail</p>
-                    <button class="cell__btn cell--item">Follow</button>
+                    <button class="cell__btn cell__btn--followed cell--item">Following</button>
                 </div>
             </div>
         </section>
+
+        <section class="main__gallery container">
+            <div class="gallery__head">
+                <button class="gallery__btn"><i class="fas fa-times"></i></button>
+                <div class="gallery__field"><p class="gallery__field--text">Write a message...</p></div>
+                <button class="gallery__btn2"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="gallery__grid">
+                <img src="../images/Rectangle 1.svg">
+                <img src="../images/Rectangle 2.svg">
+                <img src="../images/Rectangle 3.svg">
+                <img src="../images/Rectangle 4.svg">
+                <img src="../images/Rectangle 5.svg">
+                <img src="../images/Rectangle 6.svg">
+            </div>
+        </section>
     </main>
-    <script src="../preferences/script.js"></script>
 </body>
 
 </html>

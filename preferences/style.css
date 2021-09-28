@@ -17,16 +17,23 @@ body {
 }
 
 button {
-    border: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
 }
 
-/* main PROFILE */
-.main__profile {
+.container {
     width: 320px;
     padding: 16px;
     background-color: #191A1D;
     border-radius: 20px;
+    color: white;
 }
+
+/* main PROFILE */
+
 
 /* PROFILE BASE */
 .profile__base {
@@ -114,11 +121,6 @@ button {
 /* main FOLLOWERS */
 .main__followers {
     margin-top: 10px;
-    width: 320px;
-    background-color: #191A1D;
-    padding: 16px;
-    border-radius: 20px;
-    color: white;
 }
 
 .followers__head {
@@ -144,29 +146,81 @@ button {
     gap: 16px;
 }
 
-.grid__cell{
-    background:linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+.grid__cell {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     border-radius: 12px;
     height: 160px;
     padding: 20px 0px;
 }
-.cell--item{
+
+.cell--item {
     margin: 0 auto;
     display: block;
     text-align: center;
 }
-.cell__name{
+
+.cell__name {
     margin: 6px 0px 12px 0px;
+    font-size: 14px;
 }
-.cell__btn{
+
+.cell__btn {
     color: white;
     background-color: #5458F7;
     padding: 3px 18px;
     border-radius: 48px;
+    font-size: 14px;
 }
-.followed{
+
+.cell__btn--followed {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     padding: 3px 18px;
     color: white;
     border-radius: 48px;
+}
+
+/* main GALLERY */
+.main__gallery {
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.gallery__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.gallery__btn {
+    background-color: #5458F7;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+}
+
+.gallery__btn2 {
+    background-color: none;
+    color: white;
+}
+
+.gallery__field {
+    width: 226px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 6px;
+}
+
+.gallery__field--text {
+    font-size: 12px;
+    margin: 5px 8px;
+}
+
+.gallery__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
 }
