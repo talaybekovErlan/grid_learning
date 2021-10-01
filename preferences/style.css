@@ -227,7 +227,7 @@ button {
 
 /* gallery BOTTOM */
 .gallery__bottom {
-    padding: 0px 70px;
+    padding: 0px 55px;
     height: 55px;
     display: flex;
     justify-content: space-around;
@@ -236,4 +236,5 @@ button {
 
 .bottom__icons {
     font-size: 18px;
+    color: white;
 }
