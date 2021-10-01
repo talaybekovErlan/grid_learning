@@ -218,9 +218,22 @@ button {
     margin: 5px 8px;
 }
 
-.gallery__grid{
+.gallery__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1px 1px;
+}
+
+/* gallery BOTTOM */
+.gallery__bottom {
+    padding: 0px 70px;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom__icons {
+    font-size: 18px;
 }
