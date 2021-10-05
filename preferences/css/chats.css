@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 28px;
+    font-family: NetflixSans, sans-serif;
+}
+
+@font-face {
+    font-family: NetflixSans;
+    src: url(../../fonts/NetflixSans/NetflixSansRegular.ttf);
+}
+
+/* main CHATS */
+.main__chats {
+    width: 320px;
+    height: 370px;
+    background-color: #191A1D;
+    padding: 16px 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* CHATS CELL */
+.chats__cell {
+    display: flex;
+    height: 70px;
+    width: 288px;
+    align-items: center;
+}
+
+.cell__ava {
+    width: 50px;
+    height: 50px;
+}
+
+.cell__content {
+    display: flex;
+    margin-left: 12px;
+    border-bottom: 0.75px solid rgb(225, 225, 225, 0.2);
+    justify-content: space-between;
+}
+
+.cell__contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cell__content--last{
+    border-bottom: none;
+}
+
+.cell__name {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.cell__message {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    width: 150px;
+}
+
+/* cell NOTIFY */
+.cell__notify {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    width: 69px;
+    align-items: flex-end;
+}
+
+.notify__time {
+    font-size: 10px;
+    color: rgb(255, 255, 255, 0.6);
+    margin-bottom: 0px;
+    margin-top: 18px;
+}
+
+.notify__num {
+    color: white;
+    background-color: #5458F7;
+    font-size: 10px;
+    align-self: flex-end;
+    border-radius: 10px;
+    padding: 0.5px 4.5px;
+    text-align: center;
+    margin-top: 6px;
+}
