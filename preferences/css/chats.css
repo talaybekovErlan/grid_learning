@@ -49,13 +49,14 @@ body {
     flex-direction: column;
 }
 
-.cell__content--last{
+.cell__content--last {
     border-bottom: none;
 }
 
 .cell__name {
     font-size: 14px;
     margin-bottom: 0px;
+    font-weight: 600;
 }
 
 .cell__message {
@@ -92,3 +93,25 @@ body {
     text-align: center;
     margin-top: 6px;
 }
+
+/* Footer theme button*/
+.footer__btn-theme {
+    color: white;
+    padding:8px;
+    border-radius: 10px;
+    border:none;
+    background-color: #191A1D;
+    font-family: NetflixSans, sans-serif;
+    margin-top: 5px;
+}
+
+/* LIGHT THEME */
+.light-theme{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.light-theme p{
+    color: black;
+}
+
